@@ -12,7 +12,12 @@ public class ArreglosVM {
             System.out.println(m);
         }
 
-
+        mes[11]="";
+        System.out.println("");
+        for (String m:mes){
+            if(!m.equals(""))
+            System.out.println(m);
+        }
     }
 
 
