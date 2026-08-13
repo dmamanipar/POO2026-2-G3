@@ -56,12 +56,25 @@ public class ArreglosVM {
         return matriz;
     }
 
+    public static int[][] matrizf13(int tamanio, int num){
+        int [][] matriz = new int[tamanio][tamanio];
+
+        for (int i = 0; i < matriz.length; i++){
+            for(int j = 0; j < matriz[i].length - i; j++){
+                matriz[j][i]=num;
+                num++;
+            }
+        }
+        return matriz;
+    }
+
+
     public static void main(String[] args) {
        // meses();
        // int [][] m={{1,2,6}, {3,4,2}, {5,6,7}};
        // imprimirMatriz(m);
         imprimirMatriz(matrizF5(6,1));
         System.out.println("");
-        imprimirMatriz(matrizF11(5,1));
+        imprimirMatriz(matrizf13(5,1));
     }
 }
