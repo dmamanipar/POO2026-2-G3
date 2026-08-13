@@ -44,10 +44,24 @@ public class ArreglosVM {
         return matriz;
     }
 
+
+    public static int[][] matrizF11(int tamanho, int numI){
+        int[][] matriz=new int[tamanho][tamanho];
+        for (int f = 0; f < matriz.length; f++) {
+            for (int c = matriz[0].length-1-f; c>=0; c--) {
+                matriz[f][c]=numI;
+                numI++;
+            }
+        }
+        return matriz;
+    }
+
     public static void main(String[] args) {
        // meses();
        // int [][] m={{1,2,6}, {3,4,2}, {5,6,7}};
        // imprimirMatriz(m);
         imprimirMatriz(matrizF5(6,1));
+        System.out.println("");
+        imprimirMatriz(matrizF11(5,1));
     }
 }
