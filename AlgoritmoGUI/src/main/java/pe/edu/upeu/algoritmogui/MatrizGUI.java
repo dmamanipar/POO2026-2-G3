@@ -12,6 +12,8 @@ public class MatrizGUI extends Application {
     Label informacion;
     GridPane grid;
 
+
+
     public static void main(String[] args) {
         launch(args);
     }
@@ -19,7 +21,8 @@ public class MatrizGUI extends Application {
     @Override
     public void start(Stage primaryStage) {
         Label titulo=new Label("MATRIZ - FORMAS");
-
+        var a= 54;
+        var sss=new Label("Holas");
         Label lbnTm=new Label("Tamaño de la Matriz:");
         Spinner<Integer> spTm=new Spinner<>(2, 30, 5);
 
