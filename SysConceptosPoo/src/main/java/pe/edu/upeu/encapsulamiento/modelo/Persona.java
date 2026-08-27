@@ -1,8 +1,9 @@
-package pe.edu.upeu.encapsulamiento;
+package pe.edu.upeu.encapsulamiento.modelo;
 
 public class Persona {
-    String nombre;
-    int edad;
+     String nombre;
+     int edad;
+
     /*Aplicando concepto encapsulamiento*/
     public String getNombre() {
         return nombre;

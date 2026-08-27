@@ -1,8 +1,11 @@
 package pe.edu.upeu.enums;
 
 
-enum GENERO{Masculino, Femenino}
+
+
 public class Principal {
+
+    enum GENERO{Masculino, Femenino}
 
     public static void main(String[] args) {
         System.out.println(GENERO.Femenino);
@@ -16,6 +19,11 @@ public class Principal {
         for (Estado e:Estado.values()){
             System.out.println(e.getDescripcion()+"\t"+e.name());
         }
+        System.out.println("");
+        for (DiasSemana x:DiasSemana.values()){
+            System.out.println(x.getNombreDias());
+        }
+
 
     }
 }
