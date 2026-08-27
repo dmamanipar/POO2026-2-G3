@@ -19,13 +19,15 @@ public abstract class Producto implements Descontable, Auditable {
     @Override
     public double getPrecio() {
         return precio;
-    } @
-            Override
+    }
+
+    @Override
     public void aplicarDescuento(double porcentaje) {
         Descontable.validarPorcentaje(porcentaje);
         this.precio = precio * (1 - porcentaje / 100);
-    } @
-            Override
+    }
+
+    @Override
     public String registrarCambio(String usuario, String detalle) {
         return "[" + codigo + "] modificado por " + usuario + ": " + detalle;
     }

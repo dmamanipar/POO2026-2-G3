@@ -1,10 +1,11 @@
-package pe.edu.upeu.genericos;
+package pe.edu.upeu.genericos.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Repositorio<T> {
     private final List<T> elementos = new ArrayList<>();
+
     public void guardar(T elemento) {
         elementos.add(elemento);
     }
@@ -14,6 +15,7 @@ public class Repositorio<T> {
     public boolean eliminar(T elemento) {
         return elementos.remove(elemento); // usa equals() — Capítulo 15
     }
+
     public int total() {
         return elementos.size();
     }
