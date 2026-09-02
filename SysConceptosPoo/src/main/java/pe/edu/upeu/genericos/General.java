@@ -1,5 +1,6 @@
 package pe.edu.upeu.genericos;
 
+import pe.edu.upeu.abstraccion.Persona;
 import pe.edu.upeu.genericos.modelo.Cliente;
 import pe.edu.upeu.genericos.modelo.Producto;
 import pe.edu.upeu.genericos.repository.ClienteRepo;
@@ -8,6 +9,12 @@ import pe.edu.upeu.genericos.repository.Repositorio;
 
 public class General {
     public static void main(String[] args) {
+
+        int ab=5487;
+        Producto pp;
+        pp=new Producto("12345678", "Laptop 1", 100000.00);
+        Producto px=pp;
+
         Repositorio<Producto> repo=new ProductoRepo();
         repo.guardar(new Producto("12345678", "Laptop 1", 100000.00));
         repo.guardar(new Producto("12345678", "Laptop 2", 200000.00));
