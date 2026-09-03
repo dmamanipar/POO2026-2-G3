@@ -20,7 +20,7 @@ public class MatrizGUI extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Label titulo=new Label("MATRIZ - FORMAS");
+        Label titulo=new Label("MATRIZ - FORMAS - DAVID MAMANI");
         var a= 54;
         var sss=new Label("Holas");
         Label lbnTm=new Label("Tamaño de la Matriz:");
